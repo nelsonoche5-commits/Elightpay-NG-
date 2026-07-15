@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elight Pay - Login</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Elight Pay</h1>
+
+<h2>Login</h2>
+
+<input
+type="email"
+id="loginEmail"
+placeholder="Email Address"
+>
+
+<input
+type="password"
+id="loginPassword"
+placeholder="Password"
+>
+
+<button id="loginBtn">
+Login
+</button>
+
+<p id="loginMessage"></p>
+
+<p>
+Don't have an account?
+<a href="signup.html">Create Account</a>
+</p>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
