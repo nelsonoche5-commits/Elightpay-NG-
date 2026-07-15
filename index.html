@@ -1,9 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Elight Pay</title>
+  <title>Elight Pay - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f5ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .box {
+      background: white;
+      width: 90%;
+      max-width: 350px;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    h1 {
+      color: #0066ff;
+    }
+
+    input {
+      width: 90%;
+      padding: 12px;
+      margin: 8px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 95%;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      background: #0066ff;
+      color: white;
+      font-size: 16px;
+    }
+
+    .signup {
+      margin-top: 15px;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Welcome to Elight Pay</h1>
+
+<div class="box">
+  <h1>Elight Pay</h1>
+
+  <h3>Login</h3>
+
+  <input type="email" placeholder="Email">
+  <input type="password" placeholder="Password">
+
+  <button>Login</button>
+
+  <div class="signup">
+    <p>Don't have an account?</p>
+    <button>Create Account</button>
+  </div>
+
+</div>
+
 </body>
 </html>
