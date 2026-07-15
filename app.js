@@ -1,11 +1,26 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Elight Pay Started");
+const supabaseUrl = "YOUR_SUPABASE_URL";
+const supabaseKey = "YOUR_SUPABASE_PUBLISHABLE_KEY";
 
-    const buttons = document.querySelectorAll("button");
+const supabaseClient = supabase.createClient(
+  supabaseUrl,
+  supabaseKey
+);
 
-    buttons.forEach(button => {
-        button.addEventListener("click", function () {
-            console.log(button.innerText + " clicked");
-        });
-    });
+document.getElementById("signupBtn").addEventListener("click", async () => {
+
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const message = document.getElementById("message");
+
+  const { data, error } = await supabaseClient.auth.signUp({
+    email: email,
+    password: password
+  });
+
+  if (error) {
+    message.innerText = error.message;
+  } else {
+    message.innerText = "Account created successfully!";
+  }
+
 });
