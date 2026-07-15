@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elight Pay Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+<h1>Welcome to Elight Pay</h1>
+
+<div class="card">
+<h2>Wallet Balance</h2>
+<h1>₦0.00</h1>
+</div>
+
+<div class="buttons">
+<button onclick="alert('Send Money feature coming soon')">Send Money</button>
+<button onclick="alert('Receive Money feature coming soon')">Receive Money</button>
+</div>
+
+<div class="card">
+<h2>Transaction History</h2>
+<p>No transactions yet.</p>
+</div>
+
+<div class="buttons">
+<button onclick="alert('Profile feature coming soon')">Profile</button>
+<button onclick="alert('Settings feature coming soon')">Settings</button>
+<button onclick="window.location.href='Login.html'">Logout</button>
+</div>
+
+</div>
+
+</body>
+</html>
