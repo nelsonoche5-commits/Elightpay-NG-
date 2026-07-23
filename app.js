@@ -1,5 +1,5 @@
-const supabaseUrl = "https://avprmuydtwcnvbqzvtct.supabase.co";
-const supabaseKey = "sb_publishable_2Xvf3bbcfZC-YkRptjeavg_STPeXWTH";
+const supabaseUrl = "YOUR_SUPABASE_URL";
+const supabaseKey = "YOUR_SUPABASE_PUBLISHABLE_KEY";
 
 const supabaseClient = supabase.createClient(
   supabaseUrl,
@@ -7,19 +7,20 @@ const supabaseClient = supabase.createClient(
 );
 
 document.getElementById("signupBtn").addEventListener("click", async () => {
-  const email = document.getElementById("email").value.trim();
+
+  const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   const message = document.getElementById("message");
 
   const { data, error } = await supabaseClient.auth.signUp({
-    email,
-    password
+    email: email,
+    password: password
   });
 
   if (error) {
     message.innerText = error.message;
   } else {
-    message.innerText =
-      "Account created successfully! Check your email to verify your account.";
+    message.innerText = "Account created successfully!";
   }
+
 });
